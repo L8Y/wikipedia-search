@@ -1,0 +1,102 @@
+:root {
+    --primary-white: #ffffff;
+    --black: black;
+
+}
+
+body {
+    background-color:  var(--primary-white); 
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-img {
+    display: block;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}  
+
+.search-input {
+    border: none; 
+    border-bottom: 2px solid var(--black);
+    margin-right: 10px;
+    width: 25rem;
+    font-size: 20px;
+}
+
+.search-button {
+    height: 2rem;
+    width: 3rem;
+    background-color: var(--primary-white);
+}
+
+button {
+    background-color: var(--primary-white);
+    cursor: pointer;
+    box-shadow:1.5px 2px var(--black);
+} 
+
+button:hover {
+    box-shadow: none;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.box-content {
+    width: 300px; 
+    padding: 20px 50px 20px;
+    border: 2px solid var(--black);
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wikipedia-result {
+    color: var(--black);
+    margin-top: 1rem;
+    width: 300px; 
+    padding: 20px 40px 20px ;
+    border: 2px solid var(--black);
+}
+
+@media screen and (max-width:420px) {
+    .header-img {
+        width: 10rem;
+    }
+
+    #box {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .box-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .search-input {
+        width: 15rem;
+    }
+
+    .wikipedia-result{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
